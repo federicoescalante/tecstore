@@ -1,0 +1,257 @@
+/* font-family: 'Open Sans', sans-serif; */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?ic355d');
+    src:  url('../fonts/icomoon.eot?ic355d#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?ic355d') format('truetype'),
+      url('../fonts/icomoon.woff?ic355d') format('woff'),
+      url('../fonts/icomoon.svg?ic355d#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
+body{
+    font-family:'Open Sans', sans-serif; 
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.logo{
+    text-align: center;
+}
+
+header{
+    background-color: #1e262d;
+    padding: 1em 0;
+}
+
+header h1{
+    color:rgb(195, 205, 214);
+    font-size: 2.25em;
+    font-style: italic;
+    display: inline-block;
+    position: relative;
+    bottom: 1em;
+}
+
+nav{
+    background-color: #2C3E50;
+    margin-bottom: 3em;
+}
+
+nav ul{
+    margin: 0; 
+    padding: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    width: 19.5%;
+    /* padding: 1em;          */
+}
+
+nav ul li a{
+    color: silver;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 0.5em;
+}
+
+nav ul li a.activo{
+    background-color: rgb(52, 70, 88);
+}
+
+nav ul li a:hover{
+    background-color: rgb(52, 70, 88);
+}
+
+/* footer{
+    background-color: slategray;
+    clear: both;
+    text-align: center;
+    margin-top: 3em;
+} */
+
+footer {
+    position: fixed; 
+    left: 0;    /* empieza desde el margen izq */
+    bottom: 0;  /* termina en el margen derecho*/
+    width: 100%; /* ancho (de punta a punta)*/
+    background-color: slategray;
+    text-align: center; /* el texto va a aparecer en el centro*/
+}
+.holder{
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float:right;
+}
+
+.slider{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider img{
+    width: 100%;
+}
+
+@keyframes cambio{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+h2{
+    font-weight: 100;
+    color: #999999;
+}
+
+h3{
+    font-weight: 100;
+    color: #474444;
+    font-size: 20px;
+}
+
+.homeimg{
+    clear: both;
+}
+
+.nosotros, .redes1{
+    box-sizing: border-box;
+}
+
+.nosotros{ 
+    width: 75%;
+    float: left;
+    padding-right: 2em;
+}
+
+.redes1{
+    width: 25%;
+    float: right;
+    padding-left: 2em;
+    text-align: center;
+}
+
+.redes2{
+    list-style: none;
+}
+
+ul li{
+    display: inline-block;
+    width: 15%;
+}
+
+.redes2 li a{
+    text-decoration: none;
+    font-size: 30px;
+}
+
+
+.formulario1{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 1em;
+}
+
+.formulario1.left{
+    border-right: solid 1px #999999;
+}
+
+.formulario label{
+    vertical-align: top;
+    width: 30%;
+    display: inline-block;
+}
+
+.formulario input, .formulario textarea{
+    background-color: white;
+    border-radius: 5px;
+}
+
+.formulario textarea{
+    height: 10em;
+    width: 20em;
+    resize: none;
+}
+
+.formulario .acciones{
+    text-align: center;
+}
+ul{
+    list-style: none;
+}
+
+
+.icon-home:before, .icon-contacto:before, .icon-nosotros:before, .icon-servicio:before, .icon-whatsapp:before, .icon-gmail:before, .icon-facebook:before, .icon-instagram:before, .icon-twitter:before{
+    font-family: 'icomoon';
+    margin-right: 40px;
+}
+
+.icon-home:before {
+  content: "\66";
+}
+.icon-contacto:before {
+  content: "\e945";
+}
+.icon-nosotros:before {
+  content: "\e976";
+}
+.icon-servicio:before {
+  content: "\e991";
+}
+.icon-whatsapp:before {
+  content: "\ea93";
+  color: rgb(81, 148, 81);
+}
+
+.icon-gmail:before {
+    content: "\ea8a";
+    color: rgb(182, 34, 34);
+}
+
+.icon-facebook:before {
+    content: "\ea91";
+    color: rgb(42, 42, 179);
+}
+
+.icon-instagram:before {
+    content: "\ea92";
+    color: rgb(112, 34, 185);
+}
+  
+.icon-twitter:before {
+    content: "\ea96";
+    color: rgb(104, 150, 223);
+}
