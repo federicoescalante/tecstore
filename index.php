@@ -1,4 +1,2 @@
 <?php
-
-header("Location /home.html");
-exit();
+include_once("./home.html");
